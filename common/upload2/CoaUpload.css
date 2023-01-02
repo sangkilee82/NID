@@ -1,0 +1,26 @@
+*{margin:0; padding:0;}
+html, body {width:100%; height:100%; margin:0; padding:0; font-family:Dotum, '돋움', Gulim, '굴림',sans-serif;}
+.fix{*zoom:1;}
+.fix:after{content:""; clear:both; display:block;}
+.center{text-align:center !important;}
+.top_upload_table{background:#0e639c; width:100%; position:relative; z-index:2;}
+.top_upload_table th{background:#0e639c; color:#fff; font-weight:600; text-align:left; padding:11px 15px; font-size:12px;  border-left:1px solid #BEC5CE;}
+.top_upload_table th:first-child{border-left:0;}
+.bottom_upload_section{background:#e3eef5; border:1px solid #bac2cd; padding:9px 15px; border-radius:0 0 5px 5px;}
+.bottom_upload_section input{color:#fff; border:1px solid #0e639c; background:#0e639c; padding:3px 10px; border-radius:3px; font-weight:600; height:27px;}
+.bottom_upload_section input:hover{cursor:pointer;}
+.middle_upload_section{border:1px solid #bec5ce; background:#f2f1f1; color:#666; font-size:12px; padding:8px 20px;}
+.middle_upload_section p{display:inline-block; font-weight:600; margin-left:60px; background-repeat:no-repeat; background-position: 0 50%; padding-left:10px;}
+.middle_upload_section p span{color:#ca4f57; font-weight:normal;}
+.upload_section{height:38px;}
+.upload_form{width:800px; margin:0 auto; position:relative;}
+.upload_ul li{border-bottom:1px solid #e8edf4; height:40px;}
+.upload_ul li:nth-child(odd){background:#F9F9F9;}
+.upload_ul li .tit_no{width:70px; display:inline-block; text-align:center; height:40px; line-height:43px; float:left; font-size:12px; color:#222; font-weight:600;}
+.upload_ul li .tit_name{display:inline-block; text-align:left; height:40px; line-height:43px; font-size:12px; color:#666; padding:0 11px; float:left;}
+.upload_ul li .tit_name em{background:no-repeat 0 50%; font-style:normal; padding:2px 0 2px 25px;}
+.upload_ul li .tit_size{float:right; height:40px; line-height:43px; font-size:12px; text-align:right; padding-right:15px; display:inline-block;}
+table{border-collapse:collapse; border-spacing:0;}
+.filebox{margin-top:5px;}
+.filebox label {background:repeat-x 0 0; border: 1px solid #3e3e3e; border-top:1px solid #6f6f6f; border-radius: 3px; color: #000; font-weight: 600; padding: 5px 10px; font-size:13px; cursor:pointer; height:15px; display:inline-block; margin-top:-3px; width:75px; text-align:center;}
+.filebox input[type="file"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0;}

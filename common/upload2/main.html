@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<link href="./CoaUpload.css" media="all" rel="stylesheet" type="text/css" >
+	<script type="text/javascript" src="./jquery-1.8.1.min.js"></script>	
+	<script type="text/javascript" src="./CoaConfig.js"></script>
+	<script type="text/javascript" src="./CoaUpload.min.js"></script>
+	<script type="text/javascript">		
+		window.onload = function(){
+
+			Coa.Init({
+				"error": function( res ){
+				
+					console.log(res);
+
+				},
+				"complete": function( res ){
+				
+					console.log(res);
+
+				},
+				
+				"area_id": "upload_area",
+				"upload_url": "./file_upload_parser.aspx",
+				//"max_size": 4000234300,
+				"item_size": 2000000000,
+				"is_upload_btn": true,
+				"is_delete_btn": true
+				//"permit_ext": [ "AVI" ],
+				//"no_permit_ext": [ "WMV" ]
+			});
+
+		}
+
+	</script>
+
+</head>
+<body>
+	
+	<div class="upload_form" id="upload_area"></div>
+
+</body>
+</html>

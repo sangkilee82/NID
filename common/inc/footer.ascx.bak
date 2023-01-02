@@ -1,0 +1,183 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="footer.ascx.cs" Inherits="common_inc_footer" %>
+<hr />
+
+							<!--footer_wrapper-->
+							<div class="footer_wrapper">
+
+								<div class="footer_section fix">
+									<p class="lft_footer"><img src="../images/common/ico_footer.gif" alt="중앙치매센터" /></p>
+
+									<div class="ctn_footer">
+										<ul class="fix">
+											<li><a href="../other/privacy.aspx">개인정보보호정책</a></li>
+											<li><a href="../other/agreement.aspx">회원이용약관</a></li>
+											<li><a href="../other/sitemap.aspx">사이트맵</a></li>
+										</ul>
+										<address> 
+											13494 경기도 성남시 분당구 대왕판교로 670 (삼평동 682) 유스페이스2 A동 308호 <br />Tel.1666-0921  Fax.031-628-6848<br />Copyright (c) 중앙치매센터 all rights reserved
+										</address>
+									</div>
+
+									<div class="sl_box" style="height:22px;">
+										<strong>광역치매센터 바로가기</strong>
+										<ul style="display: none;">
+											<li> <a class="option" target="_blank" href="http://seoul.nid.or.kr/home/main/main.aspx">서울특별시</a></li>
+											<li> <a class="option" target="_blank" href="http://busan.nid.or.kr/home/main/main.aspx">부산광역시</a></li>
+											<li> <a class="option" target="_blank" href="http://daegu.nid.or.kr/home/main/main.aspx">대구광역시</a></li>
+											<li> <a class="option" target="_blank" href="http://incheon.nid.or.kr/home/main/main.aspx">인천광역시</a></li>
+											<li> <a class="option" target="_blank" href="http://daejeon.nid.or.kr/home/main/main.aspx">대전광역시</a></li>
+											<li> <a class="option" target="_blank" href="http://gyeonggi.nid.or.kr/home/main/main.aspx">경기도</a></li>
+											<li> <a class="option" target="_blank" href="http://gangwon.nid.or.kr/home/main/main.aspx">강원도</a></li>
+											<li> <a class="option" target="_blank" href="http://chungbuk.nid.or.kr/home/main/main.aspx">충청북도</a></li>
+											<li> <a class="option" target="_blank" href="http://chungnam.nid.or.kr/home/main/main.aspx">충청남도</a></li>
+											<li> <a class="option" target="_blank" href="http://jeonbuk.nid.or.kr/home/main/main.aspx">전라북도</a></li>
+											<li> <a class="option" target="_blank" href="http://jeonnam.nid.or.kr/home/main/main.aspx">전라남도</a></li>
+											<li> <a class="option" target="_blank" href="http://gyeongbuk.nid.or.kr/home/main/main.aspx">경상북도</a></li>														
+											<li> <a class="option" target="_blank" href="http://jeju.nid.or.kr/home/main/main.aspx">제주특별자치도</a></li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+							<!--/footer_wrapper-->
+
+						</div>
+						<!--/rit_contents_section-->
+
+					</div>
+					<!--/contents_section-->
+
+				</div>
+				<!--/contents_wrapper-->
+
+			</div>
+			<!--/common_wrapper-->
+
+		</div>
+		<!--/body_wrapper-->
+		<div class="opaBlack"></div>
+
+		<!-- 실종노인 찾기 -->
+		<div class="popMenu">
+			<div class="popTitle">
+				<strong>상세보기</strong>
+				<a href="#" class="btnClose"><img src="../images/common/btn_close.png" alt="닫기버튼" /></a>
+			</div>
+			<div class="popSection fix">
+				<div class="popImg left">
+					<img src="../images/support/img1.jpg" alt="" />
+					<a href="../support/report.aspx"><img src="../../images/support/btn_detail.png" alt="제보하기" /></a>
+				</div>
+				<div class="popCnt left">
+					<table border="0" cellpadding="0" cellspacing="0" class="tableType4">
+						<caption>상세 정보</caption>
+						<colgroup>
+							<col width="117px" />
+							<col width="162px" />
+							<col width="117px" />
+							<col width="184px" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td>김토자</td>
+								<th>나이</th>
+								<td>89</td>
+							</tr>
+							<tr>
+								<th>실종일자</th>
+								<td>2016. 05. 18</td>
+								<th>성별</th>
+								<td>여</td>
+							</tr>
+							<tr>
+								<th>실종장소</th>
+								<td colspan="3">(526-833) 전남 영암군 도포면 야기내길 9-5</td>
+							</tr>
+							<tr>
+								<th>발생경위</th>
+								<td colspan="3">실종당일 오후 4시 경 동네 인근에서 마지막으로 목격된 이후 현재까지..</td>
+							</tr>
+							<tr>
+								<th>신장</th>
+								<td>있지 않음</td>
+								<th>몸무게</th>
+								<td>모름</td>
+							</tr>
+							<tr>
+								<th>체격</th>
+								<td>있지 않음</td>
+								<th>두발</th>
+								<td>모름</td>
+							</tr>
+							<tr>
+								<th>인상착의</th>
+								<td colspan="3">있지 않음</td>
+							</tr>
+						</tbody>
+					</table>
+					<ul class="btnGroup">
+						<li><a href="../support/search_man.aspx" class="searchBtn">유사 무연고노인 찾아보기</a></li>
+						<li><a href="../support/free_apply2.aspx" class="advBtn">무료 홍보물 신청하기</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //실종노인 찾기 -->
+
+		<!-- 치매시설 찾기 -->
+		<div class="demenInfoWrap">
+			<div class="popTitle">
+				<strong>(사)대구노인의전화<img src="../images/info/ico_center5_b.png" alt="노인보호전문기관"/></strong>
+				<a class="btnClose" href="#"><img alt="닫기버튼" src="../images/common/btn_close.png"></a>
+			</div>
+			<div class="fix">
+				<div class="listInfo left">
+					<ul>
+						<li>기관명 : (사)대구노인의 전화</li>
+						<li>주소 : 서울시 강남구 도곡동 515-17번지</li>
+						<li>전화번호 : 02-571-7093</li>
+						<li>홈페이지 : www.ctit.co.kr</li>
+					</ul>
+				</div>
+				<div class="demanMap left"></div>
+			</div>
+		</div>	
+		<!-- //치매시설 찾기 -->
+
+		<!-- 전체 메뉴 -->
+		<div class="fullMenu">
+			<div class="fMClose">
+				<a href="#">CLOSE</a>
+			</div>
+			<div>
+				<div class="fMWrap_top"></div>
+				<div class="fMWrap">
+					<ul class="oDep fix">
+                        <asp:Repeater runat="server" ID="total_RT" OnItemDataBound="TopBounds">
+                            <ItemTemplate>
+						        <li <%# Container.ItemIndex % 3 == 0 ? "class='bdl_x' style='clear:both;' " : "" %>><strong class="yellowBg"><%# Eval("CODE_NAME") %></strong>
+							        <ul class="tDep">
+                                        <asp:Literal runat="server" ID="depth2"/>
+							        </ul>
+						        </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+					</ul>
+				</div>
+				<div class="fMWrap_btm"></div>
+			</div>
+		</div>
+		<!-- //전체 메뉴 -->
+
+		<script type="text/javascript">
+			function menu_H(){
+				var h = $('.fullMenu').height();
+				var sum = 0;
+				sum = h/2;
+				$('.fullMenu').css('marginTop',-sum);
+			}
+			menu_H();
+		</script>
+	</body>
+</html>

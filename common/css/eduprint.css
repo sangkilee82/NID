@@ -1,0 +1,353 @@
+
+@media print {
+	@page {
+		size: auto;
+		margin: 0mm;
+	}
+	/* in case @page {margin: 5cm 0 5cm 0;} doesn't work */
+	
+}
+
+/* reset css */
+* {
+	margin: 0;
+	padding: 0
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Noto Sans, Nanum Gothic, '나눔고딕','맑은 고딕','Malgun Gothic', 'Nanum Gothic', 'NanumBarunGothic', Dotum, '돋움', Gulim, '굴림', sans-serif;
+}
+
+body {
+	word-break: break-all;
+	-ms-word-break: break-all;
+	height: auto;
+	font-size: 0.875em;
+}
+
+a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, table, th, td caption, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, form, img {
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 12px;
+	text-align: left;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+abbr, acronym {
+	border: 0;
+}
+
+img {
+	vertical-align: middle;
+	border: none;
+}
+
+img, fieldset, iframe {
+	border: none;
+}
+
+em, address {
+	font-style: normal;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input, select, textarea {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+	input[type='text'], input[type='password'], input[type='submit'], input[type='search'] {
+		border-radius: 0
+	}
+
+	input:checked[type='checkbox'] {
+		background-color: #666;
+		-webkit-appearance: checkbox
+	}
+
+	button, input[type='button'], input[type='submit'], input[type='reset'], input[type='file'] {
+		-webkit-appearance: button;
+		border-radius: 0
+	}
+
+/* Hyper Link */
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+	a:active,
+	a:hover {
+		text-decoration: none;
+	}
+
+/* Hidden Content */
+.skip {
+	font-size: 0px;
+	height: 0px;
+	line-height: 0px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 0px;
+	white-space: nowrap;
+	width: 0px;
+}
+
+/* hr , legend , caption */
+hr, legend, caption {
+	clear: both;
+	display: none;
+	list-style: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	font-size: 0px;
+	line-height: 0;
+	visibility: hidden;
+}
+
+/* fix */
+.fix {
+	*zoom: 1;
+}
+
+	.fix:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+/***** 스타일 *****/
+.printTop {
+	border-bottom: 1px solid #000;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 780px;
+	height: 69px;
+	background: #fff;
+}
+
+	.printTop .startPage .textSec {
+		font-size: 15px;
+		font-weight: 600;
+		letter-spacing: -0.25px;
+		color: #222;
+	}
+
+		.printTop .startPage .textSec span {
+			color: #f15a21 !important;
+		}
+
+	.printTop .startPage ul {
+		margin-top: 15px;
+	}
+
+		.printTop .startPage ul li {
+			margin-left: 5px;
+			float: left;
+		}
+
+			.printTop .startPage ul li:first-child {
+				margin-left: 0;
+			}
+
+	.printTop .changePage {
+		position: relative;
+	}
+
+		.printTop .changePage > ul {
+		}
+
+			.printTop .changePage > ul > li {
+				margin-top: 5px;
+				height: 32px;
+				font-size: 15px;
+				font-weight: 600;
+			}
+
+				.printTop .changePage > ul > li:first-child {
+					margin-top: 0;
+					line-height: 32px;
+				}
+
+	.printTop .changeGroup {
+	}
+
+		.printTop .changeGroup li {
+			float: left;
+			margin-left: 5px;
+		}
+
+			.printTop .changeGroup li:first-child {
+				margin-left: 0;
+			}
+
+.eduPrint {
+	width: 800px;
+	margin-top: 90px;
+}
+
+	.eduPrint thead th {
+		font-size: 60px;
+		font-weight: 400;
+		padding: 40px;
+		letter-spacing: 3px;
+	}
+
+		.eduPrint thead th div strong {
+		}
+
+	.eduPrint tbody tr > th {
+		font-size: 18px;
+		font-weight: 600;
+		text-align: right;
+		padding-right: 9px;
+	}
+
+	.eduPrint tbody tr > td {
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.eduPrint tbody ul {
+		height: 215px;
+	}
+
+		.eduPrint tbody ul li {
+			padding: 10px 0;
+		}
+
+			.eduPrint tbody ul li dl {
+				width: 100%;
+			}
+
+				.eduPrint tbody ul li dl dt {
+					float: left;
+					width: 19%;
+					font-weight: 600;
+					text-align: right;
+					padding-right: 5px;
+				}
+
+				.eduPrint tbody ul li dl dd {
+					float: left;
+					width: 80%;
+					font-weight: 600;
+				}
+
+	.eduPrint tfoot > th {
+	}
+
+	.eduPrint tfoot img {
+		width: 600px;
+	}
+
+	.eduPrint table th {
+		padding: 10px 0;
+	}
+
+	.eduPrint table td {
+		padding: 10px 0;
+	}
+
+.ib {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	width: 81px;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+	color: #fff;
+	font-weight: 600;
+	font-family: '맑은 고딕';
+	border-radius: 3px;
+	overflow: hidden;
+	margin-top: 3px;
+	font-size: 14px !important;
+}
+
+	.ib:first-child {
+		margin-top: 0;
+	}
+
+.bg_ygreen {
+	background: #97be31;
+}
+
+.bg_bgreen {
+	background: #02a39b;
+	color: #fff;
+}
+
+.bg_gray {
+	background: #9d9d9d;
+}
+
+.bg_dgray {
+	background: #6d6d6d;
+}
+
+.bg_blue {
+	background: #3996d1;
+}
+
+.bg_dblue {
+	background: #2e719e;
+}
+
+.bg_yellow {
+	background: #faa619;
+}
+
+.bg_red {
+	background: #f15a21;
+}
+
+.bg_navy {
+	background: #053863;
+}
+
+.printCnt {
+	font-size: 30px;
+	font-weight: 600;
+	padding: 30px 55px;
+	line-height: 1.5;
+}
+
+.printDate {
+	font-size: 28px;
+	font-weight: 600;
+	padding: 25px 0 20px;
+}
+
+</style >
