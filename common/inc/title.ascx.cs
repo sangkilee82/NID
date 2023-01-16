@@ -8,59 +8,65 @@ using System.Web.UI.WebControls;
 
 public partial class janid_test_common_inc_title : UserControlBase {
 
-	protected void Page_Load(object sender, EventArgs e) {
+    protected string dep_code_name = string.Empty;
+    protected string code_name = string.Empty;
 
-		if (!Page.IsPostBack) {
+    protected void Page_Load(object sender, EventArgs e) {
 
-			Titel_List();
+        if (!Page.IsPostBack) {
 
-		}
+            Titel_List();
 
-	}
+        }
 
-	protected void Titel_List() {
+    }
 
-		PJHCmdWrapper P = new PJHCmdWrapper();
+    protected void Titel_List() {
 
-		if (B.Get("seq").ConString().IsEmpty() == false) {
-			Session["matchCode"] = B.Get("seq");
-		}
+        PJHCmdWrapper P = new PJHCmdWrapper();
 
-		using (SqlConnection conn = new SqlConnection(Base.commDBString)) {
+        if (B.Get("seq").ConString().IsEmpty() == false) {
+            Session["matchCode"] = B.Get("seq");
+        }
 
-			conn.Open(ref P.cmd);
+        using (SqlConnection conn = new SqlConnection(Base.commDBString)) {
 
-			//3뎁스
-			if (Session["matchCode"].ConString().Substring(6, 3) != "000") {
+            conn.Open(ref P.cmd);
 
-				P.query = " select A.CODE, A.CODE_NAME, " +
-									"        ( select CODE_NAME " +
-									"          from TB_USER_CODE " +
-									"          where DEPTH = 1 and substring( CODE, 1, 3 ) = substring( A.PT_CODE, 1, 3 ) ) as DEP_CODE_NAME " +
-									" from TB_USER_CODE A " +
-									" where CODE = @CODE and DEPTH = 3 and REAL_YN = 'Y' ";
-				P.Cmd_Query();
-				P.Cmd_Parameters_AddWithValue("@CODE", Session["matchCode"].ConString());
-				P.Cmd_ExecuteReader().CloneStringDic(B.StrDic).CloseDispose();
+            //3뎁스
+            if (Session["matchCode"].ConString().Substring(6, 3) != "000") {
 
-			} else {
+                P.query = " select A.CODE, A.CODE_NAME, " +
+                                    "        ( select CODE_NAME " +
+                                    "          from TB_USER_CODE " +
+                                    "          where DEPTH = 1 and substring( CODE, 1, 3 ) = substring( A.PT_CODE, 1, 3 ) ) as DEP_CODE_NAME " +
+                                    " from TB_USER_CODE A " +
+                                    " where CODE = @CODE and DEPTH = 3 and REAL_YN = 'Y' ";
+                P.Cmd_Query();
+                P.Cmd_Parameters_AddWithValue("@CODE", Session["matchCode"].ConString());
+                P.Cmd_ExecuteReader().CloneStringDic(B.StrDic).CloseDispose();
 
-				P.query = " select A.CODE, A.CODE_NAME, " +
-									"        ( select CODE_NAME " +
-									"          from TB_USER_CODE " +
-									"          where DEPTH = 1 and substring( CODE, 1, 3 ) = substring( A.PT_CODE, 1, 3 ) ) as DEP_CODE_NAME " +
-									" from TB_USER_CODE A " +
-									" where CODE = @CODE and DEPTH = 2 and REAL_YN = 'Y' ";
-				P.Cmd_Query();
-				P.Cmd_Parameters_AddWithValue("@CODE", Session["matchCode"].ConString());
-				P.Cmd_ExecuteReader().CloneStringDic(B.StrDic).CloseDispose();
+            } else {
 
-			}
+                P.query = " select A.CODE, A.CODE_NAME, " +
+                                    "        ( select CODE_NAME " +
+                                    "          from TB_USER_CODE " +
+                                    "          where DEPTH = 1 and substring( CODE, 1, 3 ) = substring( A.PT_CODE, 1, 3 ) ) as DEP_CODE_NAME " +
+                                    " from TB_USER_CODE A " +
+                                    " where CODE = @CODE and DEPTH = 2 and REAL_YN = 'Y' ";
+                P.Cmd_Query();
+                P.Cmd_Parameters_AddWithValue("@CODE", Session["matchCode"].ConString());
+                P.Cmd_ExecuteReader().CloneStringDic(B.StrDic).CloseDispose();
 
-			conn.Close(ref P.cmd);
+            }
 
-		}
+            conn.Close(ref P.cmd);
 
-	}
+        }
+
+        dep_code_name = B.StrDic["DEP_CODE_NAME"].ConString() == "" ? "" : B.StrDic["DEP_CODE_NAME"].Replace("<br/>", "");
+        code_name = B.StrDic["CODE_NAME"].ConString() == "" ? "" : B.StrDic["CODE_NAME"].Replace("<br/>", "");
+
+    }
 
 }

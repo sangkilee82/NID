@@ -9,7 +9,7 @@ using System.Text;
 public partial class zadmin_common_inc_top : UserControlBase {
 
 	protected void Page_Load(object sender, EventArgs e) {
-		
+
 		if (!Page.IsPostBack) {
 
 			//1Depth의 TOP 리스트를 호출한다.
@@ -137,7 +137,7 @@ public partial class zadmin_common_inc_top : UserControlBase {
 
 	}
 
-	//방문자 수 
+	//방문자 수
 	private void VisitCount() {
 
 		PJHCmdWrapper P = new PJHCmdWrapper();
@@ -161,7 +161,7 @@ public partial class zadmin_common_inc_top : UserControlBase {
 				int cnt = P.Cmd_ExecuteScalar().ConInt();
 				if (cnt < 1) {
 
-					// 오늘 첫 방문자 
+					// 오늘 첫 방문자
 					P.query = " insert into TB_LOG_COUNT " +
 										" (GUBUN, LOG_COUNT, DATE) values " +
 										" (@GUBUN, @LOG_COUNT, @DATE) ";
@@ -221,7 +221,7 @@ public partial class zadmin_common_inc_top : UserControlBase {
 				int cnt = P.Cmd_ExecuteScalar().ConInt();
 				if (cnt <= 0) {
 
-					// 오늘 첫 방문자 
+					// 오늘 첫 방문자
 					P.query = " insert into TB_VISIT_COUNT_TEST " +
 										" (GUBUN, LOG_COUNT, DATE, IP) values " +
 										" (@GUBUN, @LOG_COUNT, @DATE ,@IP) ";
@@ -249,7 +249,7 @@ public partial class zadmin_common_inc_top : UserControlBase {
 
 	}
 
-	//봇 count 
+	//봇 count
 	private int bot_cnt() {
 
 		PJHCmdWrapper P = new PJHCmdWrapper();
@@ -293,9 +293,9 @@ public partial class zadmin_common_inc_top : UserControlBase {
 			string depth2_url = string.Empty;
 			string depth2_open_yn = string.Empty;
 
-			Literal c_lt = new Literal();			
+			Literal c_lt = new Literal();
 			Literal c_lt_depth1 = new Literal();
-			
+
 			// 교육 나눔 클릭 시 팝업창 활성화
 				if ( code == "013000000" || code == "005000000" || code == "003000000") {
 					edu_html = "onclick=fnc_edu()";
@@ -303,7 +303,7 @@ public partial class zadmin_common_inc_top : UserControlBase {
 					c_lt.Text = edu_html;
 				}
 
-			
+
 			using (SqlConnection conn = new SqlConnection(Base.commDBString)) {
 
 				conn.Open(ref P.cmd);
@@ -330,7 +330,7 @@ public partial class zadmin_common_inc_top : UserControlBase {
 					} else {
 
 						//새창
-						if (depth2_open_yn == "Y") {        //새창 
+						if (depth2_open_yn == "Y") {        //새창
 
 							html += "<li><a href='" + GetSSO_URL(depth2_url) + "' target='_blank'>" + depth2_code_name + "</a></li>";
 
@@ -401,7 +401,7 @@ public partial class zadmin_common_inc_top : UserControlBase {
 		PJHCmdWrapper P = new PJHCmdWrapper();
 
 		string html = string.Empty;
-		html += "<li><a href='#' class='fix'>" + depth2_code_name + "<img src='../images/common/bg_twoDep_on.gif' alt='더 보기' /></a>";
+		html += "<li><a href='javascript:void(0);' class='fix'>" + depth2_code_name + "<img src='../images/common/bg_twoDep_on.gif' alt='더보기' /></a>";
 		html += "<ul class='threeDep'>";
 
 		using (SqlConnection conn = new SqlConnection(Base.commDBString)) {
@@ -415,10 +415,10 @@ public partial class zadmin_common_inc_top : UserControlBase {
 			P.Cmd_Query();
 			P.Cmd_Parameters_AddWithValue("@PT_CODE", depth2_code);
 			P.dr = P.Cmd_ExecuteReader();
-			while (P.dr.Read()) {    
-        
+			while (P.dr.Read()) {
+
         // 임시 점검중 로직
-        string href = P.dr["URL"].ConString();       
+        string href = P.dr["URL"].ConString();
 
         if (P.dr["OPEN_YN"].ConString() == "Y") {
 
@@ -428,7 +428,7 @@ public partial class zadmin_common_inc_top : UserControlBase {
             html += "<li><p class='dev_chk_url' style='color:#595d66; font-size:14px; font-weight:600; cursor:pointer;' >" + P.dr["CODE_NAME"].ConString().Replace( "<br/>", "" ) + "</p></li>";
           } else {
             html += "<li><a href = '" + GetSSO_URL( href ) + "' target='_blank'>" + P.dr["CODE_NAME"].ConString().Replace( "<br/>", "" ) + "</a></li>";
-          }          
+          }
           */
           html += "<li><a href = '" + GetSSO_URL( href ) + "' target='_blank'>" + P.dr["CODE_NAME"].ConString().Replace( "<br/>", "" ) + "</a></li>";
 

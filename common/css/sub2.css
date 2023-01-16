@@ -5,12 +5,10 @@
 Front-end Develope : InHwan Bae
 */
 
-/* 치매선도 단체 */
-.leadinggroupWrap .subTitle{margin-bottom:20px; letter-spacing:0;}
+
 .tableType3{border-top:2px solid #f15a22; table-layout:fixed;}
 .tableType3 tbody th{background:#fcfcfc; border:1px solid #ddd; font-size:14px;}
 .tableType3 tbody td{padding:30px; border:1px solid #ddd;}
-.tableType3 tbody td dl{}
 .tableType3 tbody td dl dt{font-size:22px; font-weight:600; margin-bottom:10px; color:#222; font-family:KoPub Dotum, 'KoPub Dotum';}
 .tableType3 tbody td dl dd{font-size:14px; line-height:1.5; color:#555;}
 .lib_table tbody td{padding:10px 10px 10px 30px !important;}
@@ -28,13 +26,14 @@ Front-end Develope : InHwan Bae
 .centerSection > div{margin-bottom:30px;}
 .centerSection h5.h5CommonTit{float:left; margin-bottom:0;}
 .centerSection p.nPoint{float:right; color:#444; margin-top:15px;}
+
 .ctList{}
 .ctList li{float:left; border:1px solid #ddd; background:#fbfbfb; width:188px; margin-left:15px; margin-bottom:15px;}
 .ctList li a{display:block; border-bottom:1px solid #ddd;}
 .ctList li span{display:block; height:26px; text-align:center; font-size:14px; color:#444; padding-top:8px;}
 .ctList li span.line2{display:block; height:34px; text-align:center; font-size:14px; color:#444; padding-top:0;}
 
-/* 연혁 */
+/********** 소개 > 연혁 **********/
 .historyWrap .kindsTit{}
 .historyWrap .kindsTit h5{background:url(../../images/introduce/bg_cir_his.gif) no-repeat 0 0; width:159px; height:114px; color:#fff; font-size:20px; letter-spacing:1px; font-weight:400; text-align:center; padding-top:45px;}
 .historyWrap .kindsTit h5 strong{font-size:38px; font-weight:600; letter-spacing:-0.05em; display:block;}
@@ -57,16 +56,16 @@ Front-end Develope : InHwan Bae
 .historyWrap .kindsCnt .yearList .month{padding-bottom:10px; margin-bottom:10px; font-size:25px; font-weight:600; color:#f15a21; border-bottom:1px solid #f15a21; font-family:KoPub Dotum, 'KoPub Dotum';}
 .historyWrap .kindsCnt .yearList li dd{}
 .historyWrap .kindsCnt .yearList li dd ul{}
-.historyWrap .kindsCnt .yearList li dd ul li{margin-top:10px; font-size:13px; color:#444; padding-left:20px; line-height:1.4;}
+.historyWrap .kindsCnt .yearList li dd ul li{margin-top:10px;font-size:13px;color:#444;padding-left: 24px;line-height:1.4;}
 .historyWrap .kindsCnt .yearList li dd ul li:first-child{margin-top:0px;}
-.historyWrap .kindsCnt .yearList li dd ul li.his0_s{background:url(../../images/introduce/bg_his0_s.png) no-repeat 0 5px;}
-.historyWrap .kindsCnt .yearList li dd ul li.his1_s{background:url(../../images/introduce/bg_his1_s.png) no-repeat 0 5px;}
-.historyWrap .kindsCnt .yearList li dd ul li.his2_s{background:url(../../images/introduce/bg_his2_s.png) no-repeat 0 5px;}
-.historyWrap .kindsCnt .yearList li dd ul li.his3_s{background:url(../../images/introduce/bg_his3_s.png) no-repeat 0 5px;}
-.historyWrap .kindsCnt .yearList li dd ul li.his4_s{background:url(../../images/introduce/bg_his4_s.png) no-repeat 0 5px;}
-.historyWrap .kindsCnt .yearList li dd ul li.his5_s{background:url(../../images/introduce/bg_his5_s.png) no-repeat 0 5px;}
-.historyWrap .kindsCnt .yearList li dd ul li.his6_s{background:url(../../images/introduce/bg_his6_s.png) no-repeat 0 5px;}
-.historyWrap .kindsCnt .yearList li dd ul li.his7_s{background:url(../../images/introduce/bg_his7_s.png) no-repeat 0 5px;}
+.historyWrap .kindsCnt .yearList li dd ul li.his0_s{background:url(../../images/introduce/bg_his0.png) no-repeat 0 2px / 16px auto;}
+.historyWrap .kindsCnt .yearList li dd ul li.his1_s{background:url(../../images/introduce/bg_his1.png) no-repeat 0 2px / 16px auto;}
+.historyWrap .kindsCnt .yearList li dd ul li.his2_s{background:url(../../images/introduce/bg_his2.png) no-repeat 0 2px / 16px auto;}
+.historyWrap .kindsCnt .yearList li dd ul li.his3_s{background:url(../../images/introduce/bg_his3.png) no-repeat 0 2px / 16px auto;}
+.historyWrap .kindsCnt .yearList li dd ul li.his4_s{background:url(../../images/introduce/bg_his4.png) no-repeat 0 2px / 16px auto;}
+.historyWrap .kindsCnt .yearList li dd ul li.his5_s{background:url(../../images/introduce/bg_his5.png) no-repeat 0 2px / 16px auto;}
+.historyWrap .kindsCnt .yearList li dd ul li.his6_s{background:url(../../images/introduce/bg_his6.png) no-repeat 0 2px / 16px auto;}
+.historyWrap .kindsCnt .yearList li dd ul li.his7_s{background:url(../../images/introduce/bg_his7.png) no-repeat 0 2px / 16px auto;}
 
 /* .historyWrap .kindsTit{float:left;}
 .historyWrap .kindsTit h5{background:url(../../images/introduce/bg_cir_his.gif) no-repeat 0 0; width:159px; height:114px; color:#fff; font-size:20px; letter-spacing:1px; font-weight:400; text-align:center; padding-top:45px;}
@@ -147,7 +146,7 @@ Front-end Develope : InHwan Bae
 .reportCnt ol li strong{display:block; margin-bottom:10px; font-size:15px; font-weight:600; letter-spacing:-0.025em;}
 .reportCnt ol li div{position:relative; font-size:14px; color:#444; letter-spacing:-0.05em; line-height:1.7;}
 .reportCnt .report1{background:url(../../images/support/bg_report1.png) no-repeat 0 0;}
-.reportCnt .report1 strong{color:#97be31;}
+.reportCnt .report1 strong{color: #10a020;}
 .reportCnt .report2{background:url(../../images/support/bg_report2.png) no-repeat 0 0;}
 .reportCnt .report2 strong{color:#02a39b;}
 .reportCnt .report3{background:url(../../images/support/bg_report3.png) no-repeat 0 0; height:69px; padding-top:10px;}
@@ -169,14 +168,14 @@ Front-end Develope : InHwan Bae
 .searchMan .searchSection{/* margin:39px 63px; */ position:relative; /* width:720px; */ margin-bottom:20px;}
 .searchMan .searchSection .searchTop{margin-bottom:3px;}
 .btnSearch{position:absolute; top:0; right:0;}
-.btnSearch input{display:block; width:74px; text-align:center; height:71px; padding-top:40px; background:#f57a44 url(../../images/support/bg_search.png) no-repeat center 15px; color:#fff; font-size:14px; font-weight:600; border:none;}
+.btnSearch input{display:block; width:74px; text-align:center; height:71px; padding-top:40px; background:#F35A21 url(../../images/support/bg_search.png) no-repeat center 15px; color:#fff; font-size:14px; font-weight:600; border:none;}
 .searchMan div p{float:left;}
 .searchMan div p span{display:inline-block; width:21px; text-align:center; font-size:14px; font-weight:600; color:#000; letter-spacing:-0.025em;}
 .searchMan div p span.cntName{width:110px; padding-left:5px; text-align:center;}
 
+.findManWrap .warning{min-height: 40px; background: #FEEDE2 url(../../images/support/bg_calling.gif) no-repeat 20px 12px; color: #F35A21; font-size:13px; font-weight: 700; line-height:1.5; padding: 12px 20px 12px 80px; text-align:left;}
+.findManWrap .warning1{margin-top:4px; min-height: 40px; background: #FEEDE2 url(../../images/support/bg_warning.png) no-repeat 20px 12px; color: #F35A21;font-size:13px; font-weight: 700; line-height:1.5;padding: 12px 20px 12px 80px; text-align:left;}
 
-.findManWrap .warning{height:40px; background:#fedbc5 url(../../images/support/bg_calling.gif) no-repeat 21px 14px; color:#f15a21; font-size:13px; line-height:1.5; padding:14px 0 7px 77px; text-align:left;}
-.findManWrap .warning1{height:60px; background:#fedbc5 url(../../images/support/bg_warning.png) no-repeat 21px 19px; color:#f15a21; font-size:13px; line-height:1.5; padding:7px 0 14px 77px; text-align:left;}
 .codeNum{font-size:14px; color:#444; letter-spacing:-0.025em; padding-bottom:30px; border-bottom:1px solid #ddd; margin-bottom:40px;}
 .codeNum p{line-height:1.7;}
 .codeNum p strong{font-weight:600;}
@@ -196,13 +195,13 @@ Front-end Develope : InHwan Bae
 .popTitle a{position:absolute; right:32px; top:27px;}
 .popSection{padding:10px; background:#fff;}
 .popImg{margin-right:20px; text-align:center;}
-.popImg a{display:block; margin-top:20px;}
+.popImg a{display:inline-block;}
 .btnGroup{float:right; margin-top:10px;}
 .btnGroup li{float:left; margin-left:4px;}
 .btnGroup li:first-child{margin-left:0;}
 .btnGroup li a{display:block; padding-left:25px; height:40px; line-height:40px; font-size:14px; font-weight:600; color:#fff;}
-.btnGroup li a.searchBtn{width:200px; background:#f57a44 url(../../images/notification/ico_right_arrow.gif) no-repeat 188px 50%;}
-.btnGroup li a.advBtn{width:174px; background:#f57a44 url(../../images/notification/ico_right_arrow.gif) no-repeat 162px 50%;}
+.btnGroup li a.searchBtn{width:200px; background:#F35A21 url(../../images/notification/ico_right_arrow.gif) no-repeat 188px 50%;}
+.btnGroup li a.advBtn{width:174px; background:#F35A21 url(../../images/notification/ico_right_arrow.gif) no-repeat 162px 50%;}
 
 /* 무료홍보물 */
 .freeWrap{text-align:center;}
@@ -221,8 +220,8 @@ Front-end Develope : InHwan Bae
 .freeAtt ul li{background:url(../../images/common/bg_li_dot.gif) no-repeat 0 7px; padding-left:12px; font-size:14px; color:#444; letter-spacing:-0.06em; margin-bottom:5px; line-height:1.5; text-align:left;}
 
 .searchBtn1{position:absolute; top:0; right:0;}
-.searchBtn1 a{display:inline-block; width:39px; padding-left:35px; height:35px; line-height:35px; background:#f57a44 url(../../images/support/bg_search_s.png) no-repeat 13px center; font-size:14px; font-weight:600; color:#fff !important; zoom:1; *display:inline; vertical-align:middle; text-decoration:none !important;}
-.searchBtn1 input{display:inline-block; width:90px; padding-left:20px; height:35px; line-height:35px; background:#f57a44 url(../../images/support/bg_search_s.png) no-repeat 15px 50%; font-size:14px; font-weight:600; color:#fff !important; zoom:1; *display:inline; vertical-align:middle; text-decoration:none !important; border:none;}
+.searchBtn1 a{display:inline-block; width:39px; padding-left:35px; height:35px; line-height:35px; background:#F35A21 url(../../images/support/bg_search_s.png) no-repeat 13px center; font-size:14px; font-weight:600; color:#fff !important; zoom:1; *display:inline; vertical-align:middle; text-decoration:none !important; cursor: pointer;}
+.searchBtn1 input{display:inline-block; width:90px; padding-left:20px; height:35px; line-height:35px; background:#F35A21 url(../../images/support/bg_search_s.png) no-repeat 15px 50%; font-size:14px; font-weight:600; color:#fff !important; zoom:1; *display:inline;vertical-align:middle;text-decoration:none !important;border:none; cursor: pointer;}
 
 .resultSection .peoImg img{}
 .resultSection .info{width:555px; margin-bottom:15px;}
@@ -253,9 +252,9 @@ Front-end Develope : InHwan Bae
 .freeSucess .fsMid ul li:first-child{margin-top:0;}
 .freeSucess .fsBtm{/* height:10px; */ padding-top:27px; font-size:14px; color:#444; text-align:center; padding-bottom:30px; line-height:1.4;}
 .btnChk{min-width:92px; margin:0 auto; display:inline-block; *zoom:1; *display:inline; padding:0 10px;}
-.btnChk a{display:block; color:#fff; background:#f57a44; height:42px; line-height:42px; text-align:center; font-size:14px; font-weight:600; padding:0 10px; text-align:center;}
+.btnChk a{display:block; color:#fff; background:#F35A21; height:42px; line-height:42px; text-align:center; font-size:14px; font-weight:600; padding:0 10px; text-align:center;}
 .btnChk{min-width:92px; margin:0 auto; display:inline-block; *zoom:1; *display:inline; padding:0 10px;}
-.btnChk input{display:block; color:#fff; background:#f57a44; height:42px; line-height:42px; text-align:center; font-size:14px; font-weight:600; width:92px; border:none;}
+.btnChk input{display:block; color:#fff; background:#F35A21; height:42px; line-height:42px; text-align:center; font-size:14px; font-weight:600; width:92px; border:none;}
 
 /* 이용약관 및 개인정보보호 */
 .protectSection{border:1px solid #ffe2c9; background:#fff9f4; padding:30px 0 29px 28px; margin-bottom:30px;}
@@ -288,7 +287,7 @@ Front-end Develope : InHwan Bae
 .listWrap ol li .listChk label{margin-left:17px;}
 .listWrap ol li .listChk label input{vertical-align:0;}
 .listWrap ol li .listChk label:first-child{margin-left:0;}
-.listSum{width:753px; text-align:center; height:60px; line-height:60px; margin:0 auto; background:url(../../images/support/bg_sum.png) no-repeat 0 0;}	
+.listSum{width:753px; text-align:center; height:60px; line-height:60px; margin:0 auto; background:url(../../images/support/bg_sum.png) no-repeat 0 0;}
 .listSum > div{background:url(../../images/support/bg_smc_line.png) no-repeat 0 bottom; color:#2f190e; font-size:21px; font-weight:600; font-family:KoPub Dotum, 'KoPub Dotum';}
 .listSum > div strong{background:url(../../images/support/ico_total.gif) no-repeat 0 2px; padding-left:27px; height:12px; font-size:23px; font-weight:600;}
 .listSum > div span input{font-size:23px; font-weight:600; color:#f15a21; margin-left:10px; border:0; background:none; vertical-align:-2px;}
@@ -500,18 +499,16 @@ Front-end Develope : InHwan Bae
 .mgb40{margin-bottom:40px !important;}
 .mgb50{margin-bottom:50px !important;}
 .lft_td{text-align:left !important;}
-.appBtn a{display:block; width:98px; padding-left:25px; height:40px; line-height:40px; font-size:14px; font-weight:600; color:#fff; background:#f57a44 url(../../images/notification/ico_right_arrow.gif) no-repeat 86px 50%;}
-.appBtn input{display:block; min-width:98px; padding-left:25px; height:40px; line-height:40px; font-size:14px; font-weight:600; color:#fff; background:#f57a44 url(../../images/notification/ico_right_arrow.gif) no-repeat 86px 50%; border:none;}
-.wGreenCol{color:#8fb826; font-size:15px; font-weight:600; letter-spacing:-0.025em;}
+.appBtn a{display:block;width:98px;padding-left:25px;height:40px;line-height:40px;font-size:14px;font-weight:600;color:#fff;background: #f15a21 url(../../images/notification/ico_right_arrow.gif) no-repeat 86px 50%;}
+.appBtn input{display:block; min-width:98px; padding-left:25px; height:40px; line-height:40px; font-size:14px; font-weight:600; color:#fff; background:#f15a21 url(../../images/notification/ico_right_arrow.gif) no-repeat 86px 50%; border:none;}
+.wGreenCol{color: #10a020;font-size:15px;font-weight:600;letter-spacing:-0.025em;}
 .GreenCol{color:#02a39b; font-size:15px; font-weight:600; letter-spacing:-0.025em;}
 
 .boxStyle2{border:1px solid #ddd; background:#fcfcfc;}
-
 .opaBlack{display:none; position:fixed; width:100%; height:100%; top:0; left:0; background:#000; z-index:20000; opacity:0.7; filter:alpha(opacity=70);}
 .textType1{resize:none; border:1px solid #ddd; width:100%; height:68px; box-sizing:border-box;}
-
-.inputBoard{border:1px solid #bdbdbd; background:#f9f9f9; width:176px; height:24px;}
-.selectBoard{border:1px solid #bdbdbd; width:108px; height:26px;}
+.inputBoard{border:1px solid #bdbdbd;background:#f9f9f9;width:176px;height: 26px;padding: 0 4px;box-sizing: border-box;}
+.selectBoard{border:1px solid #bdbdbd;width:108px;height:26px;padding: 0 4px;box-sizing: border-box;}
 
 /* 치매대백과 */
 .dictionWrap .numberList{margin-top:10px;}
@@ -519,17 +516,19 @@ Front-end Develope : InHwan Bae
 .tabMenu_4dep ul{}
 .tabMenu_4dep ul li{float:left; border:1px solid #ddd; background:#fcfcfc; margin-left:-1px; margin-bottom:-1px;}
 .tabMenu_4dep ul li:first-child{margin-left:0;}
-.tabMenu_4dep ul li a{height:47px; text-align:center; line-height:47px; color:#444; font-size:14px; font-weight:600; display:block; letter-spacing:-0.035em;}
+.tabMenu_4dep ul li a{position: relative;height:47px;text-align:center;line-height:47px;color:#444;font-size:14px;font-weight:600;display:block;letter-spacing:-0.035em;}
 .tabMenu_4dep ul li.on{background:#f36d3b; border:1px solid #f36d3b; position:relative; z-index:1;}
 .tabMenu_4dep ul li.on a{color:#fff;}
+.tabMenu_4dep ul li a:focus{z-index:1;}
 
 .tabMenu_5dep{margin-bottom:30px;}
 .tabMenu_5dep ul{}
 .tabMenu_5dep ul li{float:left; margin-left:7px; margin-bottom:6px;}
 .tabMenu_5dep ul li:first-child{margin-left:0;}
-.tabMenu_5dep ul li a{display:block; font-size:14px; color:#55482d; border:1px solid #edca8a; background:#fcf8ef; height:45px; line-height:45px;}
+.tabMenu_5dep ul li a{position:relative;display:block; font-size:14px; color:#55482d; border:1px solid #edca8a; background:#fcf8ef; height:45px; line-height:45px;}
 .tabMenu_5dep ul li.on{}
 .tabMenu_5dep ul li.on a{font-weight:600; background:#FFF url(../../images/info/5dep_on.gif) no-repeat 96% center; border:2px solid #edca8a; height:43px; line-height:43px;}
+.tabMenu_5dep ul li a:focus{z-index:1;}
 
 /* 치매백과 */
 .demenCntList{padding:10px 0 9px 23px; border:1px solid #d5d7da; background:#f9f9f9; margin-bottom:40px;}
@@ -592,13 +591,13 @@ Front-end Develope : InHwan Bae
 .bgCenter a{display:block; background:url(../../images/info/bg_detail.png) no-repeat 0 50%; padding-left:19px; color:#666;}
 
 /* 치매대백과 동그라미 bg */
-.dicList{}
+/* bullet */
 .dicList > li{background:url(../../images/common/ico_orange_dot.gif) no-repeat 0 7px; padding-left:13px; margin-top:5px;}
 .dicList > li:first-child{margin-top:0;}
-.dicList ul{}
 .dicList ul li{background:url(../../images/info/ico_sub_bar.gif) no-repeat 0 10px; padding-left:10px;}
 .topUpBtn{position:absolute; top:450px; right:-100px;}
 .topUpBtn a{display:block;}
+
 
 /* 마이페이지-활동이력*/
 .missSubmut{display:block; width:80px; height:40px; line-height:40px; text-align:center; color:#000; font-size:14px; font-weight:600; color:#fff; background:#656a77; margin:0 auto; cursor:pointer; border:0;}
@@ -612,9 +611,6 @@ Front-end Develope : InHwan Bae
 /*** 자조모임 팝업 ***/
 /* 메인 */
 .jajo_wrap{background:url(../../images/jajo/bg_jajo_main.jpg) no-repeat 0 0; width:870px; height:737px;}
-
-.jajo_header{}
-
 .jajo_header .jajo_tit{}
 .jajo_header .jajo_tit h1{margin-left:50px; padding-top:60px;}
 .jajo_header .jajo_tit h1 strong{font-size:45px; font-weight:600; color:#fff; font-family:KoPub Dotum, 'KoPub Dotum'; letter-spacing:-0.25px; position:relative;}
@@ -723,9 +719,9 @@ Front-end Develope : InHwan Bae
 .cnt_modi li:first-child{margin-left:0; padding-left:0; border-left:none;}
 
 .re_modify_wrap{position:relative; padding-right:46px; display:none;}
-.btn_rewrite{position:absolute; top:0; right:0; width:45px; height:26px; border:none; color:#fff; background:#f57a44; font-size:12px; font-weight:600; *margin-top:1px;}
+.btn_rewrite{position:absolute; top:0; right:0; width:45px; height:26px; border:none; color:#fff; background:#F35A21; font-size:12px; font-weight:600; *margin-top:1px;}
 .btn_g_write{display:inline-block; zoom:1; *display:inline; width:60px; padding-left:43px; height:38px; line-height:38px; background:#f67a44 url(../../images/jajo/bg_write.png) no-repeat 15px 50%; font-size:13px; font-weight:600; color:#fff; text-align:left;}
-.btn_re{display:inline-block; padding-left:35px; height:38px; line-height:38px; font-size:13px; font-weight:600; letter-spacing:-0.5px; color:#fff; *display:inline; *zoom:1; background:#f57a44 url(../../images/jajo/bg_re.png) 12% 50% no-repeat; border:none; cursor:pointer; margin-left:-4px; width:62px;}
+.btn_re{display:inline-block; padding-left:35px; height:38px; line-height:38px; font-size:13px; font-weight:600; letter-spacing:-0.5px; color:#fff; *display:inline; *zoom:1; background:#F35A21 url(../../images/jajo/bg_re.png) 12% 50% no-repeat; border:none; cursor:pointer; margin-left:-4px; width:62px;}
 
 /* .btn_remore{display:block; width:100%; text-align:center; height:34px; line-height:34px; border-bottom:1px solid #d5d5d5; background:#ebe9e9 url(../../images/jajo/bg_more.png) no-repeat 57% 50%; font-size:13px; font-weight:600; letter-spacing:-0.5px; color:#333; border:none;} */
 .fileManager{}
@@ -949,7 +945,7 @@ Front-end Develope : InHwan Bae
 .eduBoardList .empty{font-size:16px; text-align:center; font-weight:600; padding:15px 0;}
 .eduBoardList li{border:2px solid #ff9c00; border-radius:10px; margin-top:10px; overflow:hidden;}
 .eduBoardList li:first-child{margin-top:0;}
-.eSearchWrap .eduBoardList li:first-child{margin-top:0; border:2px solid #ff9c00;} 
+.eSearchWrap .eduBoardList li:first-child{margin-top:0; border:2px solid #ff9c00;}
 .eduBoardList li strong{font-size:28px; color:#505050; font-family:'KoPub Dotum'; font-weight:700; display:block; float:none; width:64px; text-align:center; height:auto; line-height:normal; position:absolute; top:50%; margin-top:-15.5px; left:0;}
 .eduBoardList li:hover strong{color:#ff7335;}
 .eduBoardList li > div{position:relative; background:#ffebcc;}
@@ -991,7 +987,6 @@ Front-end Develope : InHwan Bae
 .bg_yellow{background:#faa619;}
 .bg_red{background:#f15a21;}
 .bg_navy{background:#053863;}
-
 .blackCol0{color:#000 !important;}
 
 /* 테이블 */
@@ -1009,24 +1004,18 @@ Front-end Develope : InHwan Bae
 .btnBlack{background:#2e719e url(../../images/study/bg_search.png) no-repeat 24px 50%; width:131px; padding-left:53px; text-align:left; height:40px; line-height:40px; font-size:14px; font-weight:600; color:#fff; border:none; cursor:pointer;}
 
 .btnSub{display:block; width:98px; text-align:center; height:32px; line-height:32px; font-size:14px; font-weight:600; position:absolute; top:28px; right:30px;}
-.bgOrange{color:#fff; background:#f57a44; border:1px solid #f57a44;}
+.bgOrange{color:#fff; background:#F35A21; border:1px solid #f57a44;}
 .bgGreen{color:#fff; background:#33b2ae; border:1px solid #33b2ae;}
 .bgWhite{color:#f57a44; border:1px solid #f57a44;}
 
-button::-moz-focus-inner { 
-	padding:0; border:0; 
-}
+button::-moz-focus-inner {padding:0; border:0;}
 button::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner, 
-input[type="button"]::-moz-focus-inner, 
-input[type="submit"]::-moz-focus-inner, 
-input[type="file"] > input[type="button"]::-moz-focus-inner { 
-	padding:0; border:0; 
-}
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {padding:0; border:0;}
 
 .btnList{display:inline-block; zoom:1; *display:inline; background:#fff url(../../images/common/ico_thr_bar.gif) no-repeat 15px 50%; border:1px solid #f15a21; padding:0 15px 0 30px; width:60px; height:40px; line-height:40px; color:#f15a21; font-size:13px; font-weight:600;}
-
-
 .edu .btn_yellow a{background:#faa619; padding:6px 15px; color:#fff;}
 .edu .btn_red a{background:#f15a21; padding:6px 15px; color:#fff;}
 .edu .btn_darkblue a{background:#053863; padding:6px 15px; color:#fff;}

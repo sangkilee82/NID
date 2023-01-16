@@ -2,15 +2,15 @@
 <hr />
 
 <!--footer_wrapper-->
-<div class="footer_wrapper">
-
+<footer class="footer_wrapper">
+	<h2 id="footer" class="skip">카피라이트</h2>
 	<div class="footer_section fix">
 		<p class="lft_footer">
 			<img src="../images/common/ico_footer.gif" alt="중앙치매센터" /></p>
 
 		<div class="ctn_footer">
 			<ul class="fix">
-				<li><a target="_blank" href="https://www.nmc.or.kr/nmc/main/contents.do?menuNo=200414" style="font-weight:bold; font-size:13px;color:red;text-decoration:underline;" >개인정보처리방침</a></li>
+				<li><a href="https://www.nmc.or.kr/nmc/main/contents.do?menuNo=200414"  target="_blank" title="새창으로 열기" style="font-weight:bold; font-size:13px;color:red;text-decoration:underline;" >개인정보처리방침</a></li>
 				<li><a target="_parent" href="../other/agreement.aspx">이용약관</a></li>
 				<li><a target="_parent" href="../other/sitemap.aspx">사이트맵</a></li>
 			</ul>
@@ -22,37 +22,39 @@
 			</address>
 		</div>
 
+		<!-- 광역치매센터 바로가기 -->
 		<div class="sl_box" style="height: 22px;">
-			<strong>광역치매센터 바로가기</strong>
+			<a href="javascript:void(0);" class="link_tit" title="광역치매센터 펼치기">광역치매센터 바로가기</a>
 			<ul style="display: none;">
-				<li><a class="option" target="_blank" href="http://seoul.nid.or.kr/home/main/main.aspx">서울특별시</a></li>
-				<li><a class="option" target="_blank" href="http://busan.nid.or.kr/home/main/main.aspx">부산광역시</a></li>
-				<li><a class="option" target="_blank" href="http://daegu.nid.or.kr/home/main/main.aspx">대구광역시</a></li>
-				<li><a class="option" target="_blank" href="http://incheon.nid.or.kr/home/main/main.aspx">인천광역시</a></li>
-				<li><a class="option" target="_blank" href="https://gwangju.nid.or.kr/home/main/main.aspx">광주광역시</a></li>
-				<li><a class="option" target="_blank" href="http://daejeon.nid.or.kr/home/main/main.aspx">대전광역시</a></li>
-				<li><a class="option" target="_blank" href="http://ulsan.nid.or.kr/home/main/main.aspx">울산광역시</a></li>
-				<li><a class="option" target="_blank" href="http://sejong.nid.or.kr/home/main/main.aspx">세종특별자치시</a></li>
-				<li><a class="option" target="_blank" href="http://gyeonggi.nid.or.kr/home/main/main.aspx">경기도</a></li>
-				<li><a class="option" target="_blank" href="http://gangwon.nid.or.kr/home/main/main.aspx">강원도</a></li>
-				<li><a class="option" target="_blank" href="http://chungbuk.nid.or.kr/home/main/main.aspx">충청북도</a></li>
-				<li><a class="option" target="_blank" href="http://chungnam.nid.or.kr/home/main/main.aspx">충청남도</a></li>
-				<li><a class="option" target="_blank" href="http://jeonbuk.nid.or.kr/home/main/main.aspx">전라북도</a></li>
-				<li><a class="option" target="_blank" href="http://jeonnam.nid.or.kr/home/main/main.aspx">전라남도</a></li>
-				<li><a class="option" target="_blank" href="http://gyeongbuk.nid.or.kr/home/main/main.aspx">경상북도</a></li>
-				<li><a class="option" target="_blank" href="https://gyeongnam.nid.or.kr/home/main/main.aspx">경상남도</a></li>
-				<li><a class="option" target="_blank" href="http://jeju.nid.or.kr/home/main/main.aspx">제주특별자치도</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://seoul.nid.or.kr/home/main/main.aspx">서울특별시</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://busan.nid.or.kr/home/main/main.aspx">부산광역시</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://daegu.nid.or.kr/home/main/main.aspx">대구광역시</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://incheon.nid.or.kr/home/main/main.aspx">인천광역시</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="https://gwangju.nid.or.kr/home/main/main.aspx">광주광역시</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://daejeon.nid.or.kr/home/main/main.aspx">대전광역시</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://ulsan.nid.or.kr/home/main/main.aspx">울산광역시</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://sejong.nid.or.kr/home/main/main.aspx">세종특별자치시</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://gyeonggi.nid.or.kr/home/main/main.aspx">경기도</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://gangwon.nid.or.kr/home/main/main.aspx">강원도</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://chungbuk.nid.or.kr/home/main/main.aspx">충청북도</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://chungnam.nid.or.kr/home/main/main.aspx">충청남도</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://jeonbuk.nid.or.kr/home/main/main.aspx">전라북도</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://jeonnam.nid.or.kr/home/main/main.aspx">전라남도</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://gyeongbuk.nid.or.kr/home/main/main.aspx">경상북도</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="https://gyeongnam.nid.or.kr/home/main/main.aspx">경상남도</a></li>
+				<li><a class="option" target="_blank" title="새창으로 열기" href="http://jeju.nid.or.kr/home/main/main.aspx">제주특별자치도</a></li>
 			</ul>
 		</div>
+		<!-- // 광역치매센터 바로가기 -->
 
 	</div>
-</div>
+</footer>
 <!--/footer_wrapper-->
 
 </div>
 						<!--/rit_contents_section-->
 
-</div>
+</main>
 					<!--/contents_section-->
 </div>
 				<!--/contents_wrapper-->
@@ -117,7 +119,7 @@
 
 
 	}
-	
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

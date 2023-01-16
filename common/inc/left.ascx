@@ -2,8 +2,11 @@
 
 <div class="contents_wrapper">
 
-	<!--contents_section-->
-	<div class="contents_section fix">
+
+
+		<!--contents_section-->
+		<main class="contents_section fix">
+
 
 		<!--lft_navi_section-->
 		<div class="lft_navi_section">

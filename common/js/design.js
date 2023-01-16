@@ -4,13 +4,13 @@ $(function () {
   $('.oneDepth > a').hover(function () {
     $(this).css({
       color: '#ff7335',
-      position: 'relative'
+	  position: 'relative'
     })
   }, function () {
     $(this).css({
-      color: '',
-      backgroundColor: '',
-      position: ''
+		color: '',
+		backgroundColor: '',
+		position: ''
     })
   })
 })
@@ -18,38 +18,50 @@ $(function () {
 //2뎁스 열기, 닫기
 $(function () {
   var dep2 = $('.twoDep li a');
+
   dep2.click(function () {
     if ($(this).next().css('display') == 'none') {
       dep2.next().hide();
       dep2.find('img').attr('src', '../images/common/bg_twoDep_on.gif');
+	  dep2.attr('title','메뉴 펼침');
+
       $(this).next().show();
       $(this).find('img').attr("src", $(this).find("img").attr("src").replace("_on.gif", ".gif"));
+	  $(this).attr('title','메뉴 닫침');
     } else {
       $(this).next().hide();
       $(this).find('img').attr("src", $(this).find("img").attr("src").replace(".gif", "_on.gif"));
+	  $(this).attr('title','');
     }
     return false;
   })
+
+
 })
 
+// family link script
 $(function () {
-	$('.sl_box strong').click(function(){
+	$('.sl_box .link_tit').click(function(){
 		$(".sl_box ul").show();
+		$('.sl_box .link_tit').attr('title', '메뉴 펼치기');
 	})
 
 	$('.sl_box').mouseleave(function(){
 		$(".sl_box ul").hide();
+		$('.sl_box .link_tit').attr('title', '메뉴 접기');
 	})
 
 	$(".sl_box ul li a").click(function(){
 		var txt = $(this).text();
-		$('.sl_box strong').text(txt);
+		$('.sl_box .link_tit').text(txt);
 		$(".sl_box ul").hide();
+		$('.sl_box .link_tit').attr('title', '메뉴 펼치기');
 	})
 })
 
+// gnb script
 $(function(){
-	$('.lnbMenu > li').on('click', function(){
+	$('.lnbMenu > li').on('click focusin', function(){
 		$('.lnbBg').hide();
 		$(this).children('.lnbBg').show();
 		$('.nav_bg').show();
@@ -63,8 +75,14 @@ $(function(){
 
 	$('.oneDepth > a').click(function(){
 		$('.lnbBg').hide();
+		$('.oneDepth > a').attr('title','메뉴 펼침');
+		$(this).attr('title','메뉴 닫침');
 		$('.nav_bg').hide();
 	})
+
+
+
+
 })
 
 // 탭 메뉴
@@ -87,15 +105,21 @@ $(function(){
 	var boxLeng = $('.rightBox > div').length;
 	$('.btnPrev').css('display','none');
 
+
 	$('.slideBtn ul li a').click(function(){
-		var i = $(this).parent().index();
+		var i = $(this).parent().index(); // 현재 선택값
+
 		$('.slideBtn ul li').removeClass('on');
 		$(this).parent().addClass('on');
 		sum = i;
 		actionView();
+
+		// 접근성
+		$('.slideBtn ul li a').attr('title','선택하기');
+		$(this).attr('title','선택됨');
 		return false;
 	})
-	
+
 	$('.btnPrev').click(function(){
 		sum--;
 		actionView();
@@ -143,7 +167,7 @@ $(function(){
 	var newsH = list.height();
 	var i = 1;
 	var lt = list.length;
-	
+
 	$('.btnUp').click(function(){
 		if(i<lt){
 			list.animate({"bottom":(newsH*i)},300);
@@ -166,16 +190,16 @@ $(function(){
 		}
 		return false;
 	})
-	
+
 })
 
 
 
 // 컨텐츠 공통 탭 메뉴
-$(function(){	
+$(function(){
 	$('.tabMenu ul li').click(function(){
 		var i = $(this).index();
-		
+
 		$(this).siblings().removeClass('on');
 		$(this).addClass('on');
 
@@ -208,19 +232,20 @@ $(function(){
 })
 
 
-///////공지사항 게시판 열리기	
+///////공지사항 게시판 열리기
 $(function(){
-	
+
 		//첫번째꺼 진한회색선 $('.table_ul>li').eq(0).addClass('on');
- 
+
 		$('.table_ul>li>a').on('click', function(){
-	
+
 			var thisParent = $(this).parent('li');
-			
+
 			if (thisParent.hasClass('on')) {
 				thisParent.removeClass('on');
 				$(this).css({"background":"url(../images/info/ico_list_view.png)", 'background-repeat' : 'no-repeat', 'background-position':'97% 50%'});
 				thisParent.find('ul').slideUp(200);
+				$(this).attr('title', '메뉴 접기');
 			}
 			else {
 				thisParent.addClass('on');
@@ -229,6 +254,7 @@ $(function(){
 				thisParent.children('ul').slideDown(200);
 				thisParent.siblings('li').children('ul').slideUp(200);
 				thisParent.siblings('li').removeClass('on');
+				$(this).attr('title', '메뉴 펼치기');
 			}
 			return false;
 		});
@@ -257,15 +283,32 @@ $(function(){
 	$('.btn_total_menu').click(function(){
 		$('.opaBlack').show();
 		$('.fullMenu').show();
+		$('.fMClose a').focus();
+
+
 	})
 	$('.fMClose a').click(function(){
 		$('.opaBlack').hide();
 		$('.fullMenu').hide();
+		$('.btn_total_menu').focus();
 	})
 	$('.opaBlack').click(function(){
 		$('.opaBlack').hide();
 		$('.fullMenu').hide();
+
 	})
+
+
+	$(".oDep li:last a").keydown(function(e){
+
+		if( event.keyCode == 9 ){
+			$(".fMClose a").focus();
+			e.preventDefault();
+		}
+	});
+
+
+
 })
 
 
@@ -289,14 +332,14 @@ $( document ).ready(function() {
 	var i = 0;
 	var img_size = 157;
 
-	$(window).load(function(){	
+	$(window).load(function(){
 		loadImg();
 
 		function baloonUp() {
 			$('#bee').animate({
 				'top': -75
 			}, 1000, null, baloonDown);
-			
+
 			//sizeUp();
 		}
 
@@ -304,7 +347,7 @@ $( document ).ready(function() {
 			$('#bee').animate({
 				'top': -20
 			}, 800, null, baloonUp);
-			
+
 			//sizeUp();
 		}
 
@@ -320,12 +363,12 @@ $( document ).ready(function() {
 			/*if(i<=157){
 				i=157;
 			}*/
-			$('#bee img').animate({'width':157},3500);	
+			$('#bee img').animate({'width':157},3500);
 		}
 	})
 
 	$("#bee, #sk_video_layer").click(function () {
-	  $("#youtubediv").lightbox_me();
+	  //$("#youtubediv").lightbox_me();
 	  //$("body").addClass("overflow");
 	  //$(".body_wrapper").addClass("overflow");
 	});
@@ -337,7 +380,7 @@ $( document ).ready(function() {
 	});
 
 
-	
+
 });
 
 jQuery(function() {
@@ -379,4 +422,5 @@ $(function(){
 $(function(){
 	$('.gallery_ul li:nth-child(4)').css('marginLeft','0px');
 	$('.gallery_ul li:nth-child(7)').css('marginLeft','0px');
+
 })
