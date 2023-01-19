@@ -32,7 +32,7 @@ textarea{ border: 1px solid #d0d0d0;resize: none;}
 .ul_delivery10{top: 509px; left: 538px;}
 
 
-/********** 소개 -전문위원 **********/
+/* 소개 -전문위원 */
 .cntTitle_wrap{height:188px; background: url('../../images/sub/bg_cntTitle_wrap.jpg') 494px 0px no-repeat;}
 .cntTitle .pre_h5{margin-bottom: 5px;color: #495262;font-size: 16px;line-height: 1;letter-spacing: -0.75px;}
 .cntTitle .next_h5{width: 590px; margin-bottom: 30px; color: #444; font-size: 14px; line-height: 1.7; letter-spacing: -0.5px;}
@@ -337,11 +337,12 @@ textarea{ border: 1px solid #d0d0d0;resize: none;}
 .callcenter_bgtxt .p_head2{margin-bottom: 14px; color: #394353; font-size: 18px; line-height: 1.4; letter-spacing: -0.25px;}
 .callcenter_bgtxt .p_head3{margin-bottom: 35px; color: #444; font-size: 16px; line-height: 1.6; letter-spacing: -0.25px;}
 .callcenter_bg_sec{height: 405px; background: url('../../images/support/bg_callcenter.jpg') -35px 0px no-repeat;}
-/*지원 - 치매상담콜센터 - 소개*/
+
+/*지원 - 치매상담콜센터 - 이용안내*/
 .b_infoSection .cu_li{padding-bottom: 27px;/* margin-bottom: auto; *//* border-bottom: 1px solid #ddd; */}
 .b_infoSection .cu_inner_ul li{ height: auto;padding: 0;}
 .b_infoSection .blueCol{color: #2e719e; font-weight: 600; font-size: 15px; letter-spacing: -0.025em;}
-.b_infoSection .y_circle{display: inline-block; *display: inline; width: 18px; height: 18px; background: url('../../images/support/bg_y_circle.png') 0px 50% no-repeat; color: #fff; font-weight: 600; font-size: 11px; text-align: center; *zoom:1;}
+.b_infoSection .y_circle{display: inline-block; *display: inline;width: 18px;height: 18px;background: url('../../images/support/bg_y_circle.png') 0px 50% no-repeat;color: #56382d;font-weight: 700;font-size: 14px;line-height: 18px;text-align: center; *zoom:1;}
 .p_listyle{padding-left: 10px; background: url('../../images/common/bg_li_dot.gif') 0px 10px no-repeat;}
 .call_hexagon1{background: url('../../images/support/bg_call_hexagon1.png') 0px center no-repeat;}
 .call_hexagon2{background: url('../../images/support/bg_call_hexagon2.png') 0px center no-repeat;}

@@ -33,7 +33,7 @@ body{min-width:1100px;}
 .slideBtn ul li.slide4.on a{background:url(../../images/main/ico_slide4_on.png) no-repeat 0 0; color:#e05d6b !important;}
 .slideBtn ul li.slide5.on a{background:url(../../images/main/ico_slide5_on.png) no-repeat 0 0; color:#7463b1 !important;}
 
-.slideBtn ul li a{display:block; height:32px; padding-top:4px; padding-left:40px; color:#9b9999; font-family:KoPub Dotum, 'KoPub Dotum'; font-weight:600; font-size:21px;}
+.slideBtn ul li a{display:block; height:32px; padding-top:4px; padding-left:40px; color:#8a8a8a; font-family:KoPub Dotum, 'KoPub Dotum'; font-weight:600; font-size:21px;}
 .slideBtn ul li.on{}
 .slideBtn ul li.on a{color:#f15a21; font-weight:600;}
 
@@ -225,8 +225,8 @@ body{min-width:1100px;}
 .rightCnt3 a.btnUp{position:absolute; top:19px; right:20px;}
 .rightCnt3 a.btnDown{position:absolute; bottom:0; right:0;} */
 .rightCnt3{}
-.rightCnt3 .boxSection1{width:297px; border:1px solid #c2cad1; background:#fff;}
-.rightCnt3 .boxSection1:first-child{border-right:none;}
+.rightCnt3 .boxSection1{width: 296px;border:1px solid #c2cad1;background:#fff; margin-left:-1px}
+.rightCnt3 .boxSection1:first-child{border-right:none; margin-left:0;}
 .rightCnt3 .topSection{ position:relative;  width:297px; height:76px; padding-top:18px;font-size:13px; letter-spacing:-0.05px; text-align:center;}
 .rightCnt3 .topSection strong{display:block;color: #1c3829;font-family:'KoPub Dotum';font-weight:800;font-size:26px;letter-spacing:0;}
 .rightCnt3 .news .topSection{background: #539B5D;color:#d4fbd8;}
