@@ -75,8 +75,8 @@ $(function(){
 
 	$('.oneDepth > a').click(function(){
 		$('.lnbBg').hide();
-		$('.oneDepth > a').attr('title','메뉴 펼침');
-		$(this).attr('title','메뉴 닫침');
+		// $('.oneDepth > a').attr('title','메뉴 펼침');
+		// $(this).attr('title','메뉴 닫침');
 		$('.nav_bg').hide();
 	})
 

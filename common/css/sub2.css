@@ -9,6 +9,7 @@ Front-end Develope : InHwan Bae
 .tableType3{border-top:2px solid #f15a22; table-layout:fixed;}
 .tableType3 tbody th{background:#fcfcfc; border:1px solid #ddd; font-size:14px;}
 .tableType3 tbody td{padding:30px; border:1px solid #ddd;}
+.tableType3 tbody td dl{}
 .tableType3 tbody td dl dt{font-size:22px; font-weight:600; margin-bottom:10px; color:#222; font-family:KoPub Dotum, 'KoPub Dotum';}
 .tableType3 tbody td dl dd{font-size:14px; line-height:1.5; color:#555;}
 .lib_table tbody td{padding:10px 10px 10px 30px !important;}
@@ -33,7 +34,7 @@ Front-end Develope : InHwan Bae
 .ctList li span{display:block; height:26px; text-align:center; font-size:14px; color:#444; padding-top:8px;}
 .ctList li span.line2{display:block; height:34px; text-align:center; font-size:14px; color:#444; padding-top:0;}
 
-/********** 소개 > 연혁 **********/
+/* 연혁 */
 .historyWrap .kindsTit{}
 .historyWrap .kindsTit h5{background:url(../../images/introduce/bg_cir_his.gif) no-repeat 0 0; width:159px; height:114px; color:#fff; font-size:20px; letter-spacing:1px; font-weight:400; text-align:center; padding-top:45px;}
 .historyWrap .kindsTit h5 strong{font-size:38px; font-weight:600; letter-spacing:-0.05em; display:block;}

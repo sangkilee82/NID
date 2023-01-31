@@ -3,7 +3,7 @@
 
 <!--rit_contents_section-->
 <div class="rit_contents_section">
-
+<h2 id="contents" class="skip">본문</h2>
     <!--location_section-->
     <div class="location_section" style="position: relative;">
         <div class="top_location_section">
