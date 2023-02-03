@@ -428,7 +428,7 @@ textarea{ border: 1px solid #d0d0d0;resize: none;}
 .view_hope_message{border-top: 2px solid #f15a22; border-bottom: 1px solid #828282;}
 .view_hope_message li{padding: 18px 15px 20px 30px; border-bottom: 1px solid #ddd;}
 .view_hope_message .vh_name{margin-right: 10px; color: #000; font-size: 15px;}
-.view_hope_message .vh_date{ color: #ff8a5e;font-size: 12px;}
+.view_hope_message .vh_date{ color: #f15a21; font-size: 12px;}
 .view_hope_message .vh_p{margin-top: 12px; color: #444; font-size: 14px; line-height: 1.5; word-break: keep-all;}
 .view_hope_message .vh_p .tac{margin-top: 10px; text-align: center;}
 

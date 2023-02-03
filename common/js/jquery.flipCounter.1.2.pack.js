@@ -170,7 +170,7 @@
             }
             k.find("." + _getOption("digitClass")).each(function () {
                 if (0 == $(this).find("span").length) {
-                    $(this).append('<span style="visibility:hidden">0</span>')
+                    $(this).append('<span>0</span>')
                 }
             })
         }
@@ -265,9 +265,9 @@
             if (a in c) {
                 if (_getOption("imagePath") == "img/flipCounter-medium.png") {
 
-                    //5°³
+                    //5ï¿½ï¿½
                     //b = "height:19px; width:110px; display:inline-block; background-image:url('img/flipCounter-medium.png'); background-repeat:no-repeat;";
-                    //6°³
+                    //6ï¿½ï¿½
                     b = "height:19px; width:133px; display:inline-block; background-image:url('img/flipCounter-medium.png'); background-repeat:no-repeat;";
 
                     return b + "background-position: 0px 0px;"

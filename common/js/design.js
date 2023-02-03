@@ -23,15 +23,15 @@ $(function () {
     if ($(this).next().css('display') == 'none') {
       dep2.next().hide();
       dep2.find('img').attr('src', '../images/common/bg_twoDep_on.gif');
-	  dep2.attr('title','메뉴 펼침');
+	//   dep2.attr('title','메뉴 펼침');
 
       $(this).next().show();
       $(this).find('img').attr("src", $(this).find("img").attr("src").replace("_on.gif", ".gif"));
-	  $(this).attr('title','메뉴 닫침');
+	//   $(this).attr('title','메뉴 닫침');
     } else {
       $(this).next().hide();
       $(this).find('img').attr("src", $(this).find("img").attr("src").replace(".gif", "_on.gif"));
-	  $(this).attr('title','');
+	//   $(this).attr('title','');
     }
     return false;
   })
@@ -81,7 +81,22 @@ $(function(){
 	})
 
 
+	$('.btn_total_menu').keydown(function(e){
 
+		if( event.keyCode == 9 ){
+			console.log('tab');
+			$('.lnbBg').hide();
+			$('.nav_bg').hide();
+		}
+	});
+
+	$('.lnbMenu > li:eq(0)').keydown(function(e){
+		if(event.shiftKey && event.keyCode == 9) {
+			$('.lnbBg').hide();
+			$('.nav_bg').hide();
+		  }
+
+	});
 
 })
 
@@ -124,7 +139,9 @@ $(function(){
 		sum--;
 		actionView();
 		$('.slideBtn ul li').removeClass('on');
+		$('.slideBtn ul a').attr('title','선택하기');
 		$('.slideBtn ul li:eq(' + sum + ')').addClass('on');
+		$('.slideBtn ul li:eq(' + sum + ') a').attr('title','선택됨');
 		return false;
 	})
 
@@ -132,7 +149,9 @@ $(function(){
 		sum++;
 		actionView();
 		$('.slideBtn ul li').removeClass('on');
+		$('.slideBtn ul a').attr('title','선택하기');
 		$('.slideBtn ul li:eq(' + sum + ')').addClass('on');
+		$('.slideBtn ul li:eq(' + sum + ') a').attr('title','선택됨');
 		return false;
 	})
 
@@ -245,7 +264,7 @@ $(function(){
 				thisParent.removeClass('on');
 				$(this).css({"background":"url(../images/info/ico_list_view.png)", 'background-repeat' : 'no-repeat', 'background-position':'97% 50%'});
 				thisParent.find('ul').slideUp(200);
-				$(this).attr('title', '메뉴 접기');
+				$(this).attr('title', '펼치기');
 			}
 			else {
 				thisParent.addClass('on');
@@ -254,7 +273,7 @@ $(function(){
 				thisParent.children('ul').slideDown(200);
 				thisParent.siblings('li').children('ul').slideUp(200);
 				thisParent.siblings('li').removeClass('on');
-				$(this).attr('title', '메뉴 펼치기');
+				$(this).attr('title', '접기');
 			}
 			return false;
 		});
@@ -306,6 +325,7 @@ $(function(){
 			e.preventDefault();
 		}
 	});
+
 
 
 
